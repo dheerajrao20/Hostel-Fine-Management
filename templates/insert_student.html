@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Student</title>
+</head>
+<body>
+    <h1>Insert Student Data</h1>
+    <form id="insert-student-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="room">Room Number:</label>
+        <input type="number" name="room" id="room" required>
+        <button type="submit">Insert Student</button>
+    </form>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

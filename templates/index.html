@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Management</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Hostel Fine Management</h1>
+
+    <form id="add-fine-form">
+        <h3>Add fine</h3>
+        <label for="room">Room Number:</label>
+        <input type="number" name="room" id="room" required>
+        <label for="fine_to_add">Fine to Add:</label>
+        <input type="number" name="fine_to_add" id="fine_to_add" required>
+        <button type="submit">Add Fine</button>
+    </form>
+
+
+    <form id="remove-fine-form">
+        <h3>Remove fine</h3>
+        <label for="room">Room Number:</label>
+        <input type="number" name="room" id="room" required>
+        <label for="fine_to_remove">Fine to Remove:</label>
+        <input type="number" name="fine_to_remove" id="fine_to_remove" required>
+        <button type="submit">Remove Fine</button>
+    </form>
+
+    <a href="/export_excel">Export Student Records</a>
+
+    <a href="/export_fine_defaulters">Export Fine Defaulters</a>
+
+    <a href="/insert_student">Insert Student Data</a>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
